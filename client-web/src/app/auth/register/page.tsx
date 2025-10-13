@@ -268,7 +268,7 @@ export default function RegisterPage() {
           <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-emerald-500 to-blue-600 rounded-2xl mb-4 shadow-lg shadow-emerald-500/20">
             <TrendingUp className="w-8 h-8 text-white" />
           </div>
-          <h1 className="text-3xl font-bold text-white mb-2">TradeX</h1>
+          <h1 className="text-3xl font-bold text-white mb-2">tradingX</h1>
           <p className="text-slate-400 text-sm">
             Join thousands of traders worldwide
           </p>
@@ -286,7 +286,7 @@ export default function RegisterPage() {
               {step === "email" && "Enter your email to get started"}
               {step === "otp" && "Verify your email address"}
               {step === "password" && "Secure your account"}
-              {step === "done" && "Welcome to TradeX"}
+              {step === "done" && "Welcome to tradingX"}
             </CardDescription>
           </CardHeader>
 

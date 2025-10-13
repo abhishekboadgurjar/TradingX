@@ -1,4 +1,4 @@
-# TradeX API Testing Guide
+# tradingX API Testing Guide
 
 ## Server Information
 - **Base URL**: `http://localhost:3003`

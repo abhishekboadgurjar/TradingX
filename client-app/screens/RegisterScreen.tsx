@@ -68,7 +68,7 @@ export default function RegisterScreen() {
       {/* Logo */}
       <View style={styles.logoContainer}>
         <TrendingUp size={48} color="#fff" />
-        <Text style={styles.title}>TradeX</Text>
+        <Text style={styles.title}>tradingX</Text>
         <Text style={styles.subtitle}>Join thousands of traders worldwide</Text>
       </View>
 
@@ -81,7 +81,7 @@ export default function RegisterScreen() {
           {step === "email" && "Enter your email to get started"}
           {step === "otp" && "Verify your email address"}
           {step === "password" && "Secure your account"}
-          {step === "done" && "Welcome to TradeX"}
+          {step === "done" && "Welcome to tradingX"}
         </Text>
 
         {/* Error */}

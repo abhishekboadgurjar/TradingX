@@ -77,7 +77,7 @@ export default function LoginScreen() {
           <View style={styles.logoCircle}>
             <Feather name="trending-up" size={32} color="#fff" />
           </View>
-          <Text style={styles.title}>TradeX</Text>
+          <Text style={styles.title}>tradingX</Text>
           <Text style={styles.subtitle}>Welcome back, trader</Text>
         </View>
 

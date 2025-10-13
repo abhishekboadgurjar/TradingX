@@ -73,7 +73,7 @@ export default function VerifyScreen() {
       {/* Logo */}
       <View style={styles.logoContainer}>
         <Feather name="trending-up" size={60} color="#34D399" />
-        <Text style={styles.title}>TradeX</Text>
+        <Text style={styles.title}>tradingX</Text>
         <Text style={styles.subtitle}>⚡ Quick access to your portfolio</Text>
       </View>
 

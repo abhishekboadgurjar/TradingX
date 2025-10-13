@@ -64,7 +64,7 @@ const slides = [
   {
     key: "4",
     title: "Get Started",
-    desc: "Join thousands of traders already using TradeX. Register or login to continue.",
+    desc: "Join thousands of traders already using tradingX. Register or login to continue.",
     icon: <Zap size={100} color="#facc15" />,
   },
 ];

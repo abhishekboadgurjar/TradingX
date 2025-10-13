@@ -1,4 +1,4 @@
-# TradeX API - Trading Platform Backend
+# tradingX API - Trading Platform Backend
 
 A comprehensive trading platform API built with Node.js, Express, MongoDB, and WebSocket for real-time stock trading.
 

@@ -267,7 +267,7 @@
 //             <TrendingUp className="w-10 h-10 text-white" />
 //           </div>
 //           <h1 className="text-4xl font-bold text-white mb-2 bg-gradient-to-r from-white to-slate-300 bg-clip-text text-transparent">
-//             TradeX
+//             tradingX
 //           </h1>
 //           <p className="text-slate-400 text-sm">
 //             {step === "set"
@@ -704,7 +704,7 @@ export default function PinPage() {
             <TrendingUp className="w-10 h-10 text-white" />
           </div>
           <h1 className="text-4xl font-bold text-white mb-2 bg-gradient-to-r from-white to-slate-300 bg-clip-text text-transparent">
-            TradeX
+            tradingX
           </h1>
           <p className="text-slate-400 text-sm">
             {step === "set"

@@ -164,7 +164,7 @@
 //               <div className="w-10 h-10 bg-gradient-to-br from-emerald-500 to-emerald-600 rounded-lg flex items-center justify-center">
 //                 <TrendingUp className="w-6 h-6 text-white" />
 //               </div>
-//               <span className="text-2xl font-bold text-white">TradeX</span>
+//               <span className="text-2xl font-bold text-white">tradingX</span>
 //             </div>
 
 //             {/* Desktop Links */}
@@ -360,7 +360,7 @@
 //       >
 //         <div className="text-center mb-16">
 //           <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">
-//             Why Choose TradeX?
+//             Why Choose tradingX?
 //           </h2>
 //           <p className="text-xl text-slate-400 max-w-2xl mx-auto">
 //             Built for traders who demand the best in technology, security, and
@@ -419,7 +419,7 @@
 //                 <div className="w-8 h-8 bg-gradient-to-br from-emerald-500 to-emerald-600 rounded-lg flex items-center justify-center">
 //                   <TrendingUp className="w-5 h-5 text-white" />
 //                 </div>
-//                 <span className="text-xl font-bold text-white">TradeX</span>
+//                 <span className="text-xl font-bold text-white">tradingX</span>
 //               </div>
 //               <p className="text-slate-400 text-sm">
 //                 Empowering traders with cutting-edge technology and unmatched
@@ -489,7 +489,7 @@
 //           </div>
 //           <div className="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
 //             <p className="text-slate-500 text-sm">
-//               © 2025 TradeX. All rights reserved.
+//               © 2025 tradingX. All rights reserved.
 //             </p>
 //             <div className="flex items-center gap-2 text-slate-500 text-sm">
 //               <Lock className="w-4 h-4" />
@@ -683,7 +683,7 @@ export default function HomePage() {
               <div className="w-10 h-10 bg-gradient-to-br from-emerald-500 to-emerald-600 rounded-lg flex items-center justify-center">
                 <TrendingUp className="w-6 h-6 text-white" />
               </div>
-              <span className="text-2xl font-bold text-white">TradeX</span>
+              <span className="text-2xl font-bold text-white">tradingX</span>
             </div>
 
             {/* Desktop Links */}
@@ -888,7 +888,7 @@ export default function HomePage() {
       >
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">
-            Why Choose TradeX?
+            Why Choose tradingX?
           </h2>
           <p className="text-xl text-slate-400 max-w-2xl mx-auto">
             Built for traders who demand the best in technology, security, and
@@ -955,7 +955,7 @@ export default function HomePage() {
                 <div className="w-8 h-8 bg-gradient-to-br from-emerald-500 to-emerald-600 rounded-lg flex items-center justify-center">
                   <TrendingUp className="w-5 h-5 text-white" />
                 </div>
-                <span className="text-xl font-bold text-white">TradeX</span>
+                <span className="text-xl font-bold text-white">tradingX</span>
               </div>
               <p className="text-slate-400 text-sm">
                 Empowering traders with cutting-edge technology and unmatched
@@ -1025,7 +1025,7 @@ export default function HomePage() {
           </div>
           <div className="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-slate-500 text-sm">
-              © 2025 TradeX. All rights reserved.
+              © 2025 tradingX. All rights reserved.
             </p>
             <div className="flex items-center gap-2 text-slate-500 text-sm">
               <Lock className="w-4 h-4" />

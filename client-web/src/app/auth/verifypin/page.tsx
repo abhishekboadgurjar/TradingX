@@ -3,7 +3,6 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { useProfileStore } from "../../../store/useProfileStore";
-import Cookies from "js-cookie";
 import {
   Card,
   CardContent,
@@ -18,13 +17,15 @@ import {
   Lock,
   Shield,
   CheckCircle2,
+  KeyRound,
   Fingerprint,
+  ArrowLeft,
   AlertCircle,
 } from "lucide-react";
 
-export default function SetPinPage() {
+export default function LoginPinPage() {
   const router = useRouter();
-  const { setLoginPin } = useProfileStore();
+  const { verifyPin } = useProfileStore();
 
   const [pin, setPin] = useState("");
   const [loading, setLoading] = useState(false);
@@ -32,9 +33,9 @@ export default function SetPinPage() {
   const [messageType, setMessageType] = useState<"error" | "success">("error");
   const [shake, setShake] = useState(false);
 
-  const handleSetPin = async () => {
+  const handleVerifyPin = async () => {
     if (pin.length < 4) {
-      setMessage("PIN must be at least 4 digits.");
+      setMessage("Enter your valid PIN.");
       setMessageType("error");
       setShake(true);
       setTimeout(() => setShake(false), 500);
@@ -42,17 +43,17 @@ export default function SetPinPage() {
     }
     try {
       setLoading(true);
-      await setLoginPin(pin);
-      Cookies.set("is_pin_set", "true");
-      setMessage("PIN set successfully. Redirecting to login...");
+      await verifyPin(pin);
+      setMessage("Login successful!");
       setMessageType("success");
       setTimeout(() => {
-        router.push("/auth/login");
-      }, 1500);
+        router.push("/dashboard");
+      }, 1000);
     } catch (err: any) {
-      setMessage(err.message || "Failed to set PIN");
+      setMessage(err.message || "Failed to verify PIN");
       setMessageType("error");
       setShake(true);
+      setPin("");
       setTimeout(() => setShake(false), 500);
     } finally {
       setLoading(false);
@@ -117,10 +118,10 @@ export default function SetPinPage() {
             <TrendingUp className="w-10 h-10 text-white" />
           </div>
           <h1 className="text-4xl font-bold text-white mb-2 bg-gradient-to-r from-white to-slate-300 bg-clip-text text-transparent">
-            TradeX
+            tradingX
           </h1>
           <p className="text-slate-400 text-sm">
-            🔒 Secure your account with a PIN
+            ⚡ Quick access to your portfolio
           </p>
         </div>
 
@@ -132,12 +133,18 @@ export default function SetPinPage() {
           <CardHeader className="space-y-1 pb-6">
             <CardTitle className="text-2xl text-white flex items-center justify-between">
               <span className="flex items-center gap-2">
-                <Shield className="w-6 h-6 text-emerald-400" />
-                Set Your PIN
+                <KeyRound className="w-6 h-6 text-emerald-400" />
+                Enter PIN
               </span>
+              <button
+                onClick={() => router.back()}
+                className="text-slate-400 hover:text-white transition-colors p-2 hover:bg-slate-800 rounded-lg"
+              >
+                <ArrowLeft className="w-5 h-5" />
+              </button>
             </CardTitle>
             <CardDescription className="text-slate-400 text-sm">
-              Create a 4-6 digit PIN for quick and secure access
+              Enter your PIN to unlock your trading dashboard
             </CardDescription>
           </CardHeader>
 
@@ -170,7 +177,7 @@ export default function SetPinPage() {
                 onChange={handlePinInput}
                 onKeyPress={(e) => {
                   if (e.key === "Enter") {
-                    handleSetPin();
+                    handleVerifyPin();
                   }
                 }}
                 className="sr-only"
@@ -215,24 +222,24 @@ export default function SetPinPage() {
 
               <div className="text-center text-xs text-slate-500 flex items-center justify-center gap-2">
                 <Fingerprint className="w-4 h-4" />
-                Choose a memorable 4-6 digit PIN
+                Your PIN is end-to-end encrypted
               </div>
 
               {/* Action Button */}
               <Button
-                onClick={handleSetPin}
+                onClick={handleVerifyPin}
                 disabled={loading || pin.length < 4}
                 className="w-full h-14 bg-gradient-to-r from-emerald-500 via-emerald-600 to-emerald-500 hover:from-emerald-600 hover:via-emerald-700 hover:to-emerald-600 text-white text-lg font-semibold shadow-xl shadow-emerald-500/30 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-300 hover:scale-[1.02] active:scale-95"
               >
                 {loading ? (
                   <span className="flex items-center gap-3">
                     <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin"></div>
-                    Setting PIN...
+                    Verifying...
                   </span>
                 ) : (
                   <span className="flex items-center gap-2">
-                    <Shield className="w-5 h-5" />
-                    Set Secure PIN
+                    <Lock className="w-5 h-5" />
+                    Unlock Dashboard
                   </span>
                 )}
               </Button>
@@ -240,12 +247,12 @@ export default function SetPinPage() {
               {/* Toggle Link */}
               <div className="text-center mt-4">
                 <p className="text-slate-500 text-sm">
-                  Already set a PIN?{" "}
+                  Don't have a PIN?{" "}
                   <button
-                    onClick={() => router.push("/pin/login")}
+                    onClick={() => router.push("/pin/set-pin")}
                     className="text-emerald-400 hover:text-emerald-300 font-medium transition-colors"
                   >
-                    Enter PIN
+                    Set new PIN
                   </button>
                 </p>
               </div>
@@ -306,6 +313,15 @@ export default function SetPinPage() {
           className="text-center mt-6 space-y-3 animate-in fade-in duration-1000"
           style={{ animationDelay: "300ms" }}
         >
+          <p className="text-slate-500 text-sm">
+            Forgot your PIN?{" "}
+            <a
+              href="/dashboard/login"
+              className="text-emerald-400 hover:text-emerald-300 font-medium transition-colors"
+            >
+              Sign in with password
+            </a>
+          </p>
           <p className="text-xs text-slate-600 flex items-center justify-center gap-2">
             <Lock className="w-3 h-3" />
             Protected by military-grade AES-256 encryption

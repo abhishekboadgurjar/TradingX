@@ -166,7 +166,7 @@
 //                 <div className="w-9 h-9 bg-gradient-to-br from-emerald-500 to-emerald-600 rounded-lg flex items-center justify-center">
 //                   <TrendingUp className="w-5 h-5 text-white" />
 //                 </div>
-//                 <span className="text-xl font-bold text-white hidden sm:block">TradeX</span>
+//                 <span className="text-xl font-bold text-white hidden sm:block">tradingX</span>
 //               </div>
 //             </div>
 

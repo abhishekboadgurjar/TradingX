@@ -74,7 +74,7 @@
 //       {/* Logo */}
 //       <View style={styles.logoContainer}>
 //         <Feather name="trending-up" size={50} color="#34D399" />
-//         <Text style={styles.title}>TradeX</Text>
+//         <Text style={styles.title}>tradingX</Text>
 //         <Text style={styles.subtitle}>🔒 Secure your account with a PIN</Text>
 //       </View>
 
@@ -319,7 +319,7 @@ export default function SetPinScreen() {
       {/* Logo */}
       <View style={styles.logoContainer}>
         <Feather name="trending-up" size={50} color="#34D399" />
-        <Text style={styles.title}>TradeX</Text>
+        <Text style={styles.title}>tradingX</Text>
         <Text style={styles.subtitle}>🔒 Secure your account with a PIN</Text>
       </View>
 
