@@ -1,4 +1,5 @@
 <div align="center">
+  
   <h1>📈 TradingX - Full-Stack Web and App Trading Platform</h1>
   <p><strong>A comprehensive multi-platform stock trading application with real-time market data, advanced security, and seamless user experience</strong></p>
   
