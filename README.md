@@ -175,7 +175,7 @@ Before you begin, ensure you have the following installed:
 
 #### 1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/abhishekboadgurjar/TradingX.git
+git clone https://github.com/abhishekgurjarin/TradingX.git
 cd TradeX
 ```
 
@@ -525,8 +525,7 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 ## 👨‍💻 Author
 
 **Abhishek Gurjar**
-- GitHub: [@abhishekboadgurjar](https://github.com/abhishekboadgurjar)
-- Email: abhishekboadgurjar@gmail.com
+- GitHub: [@abhishekgurjarin](https://github.com/abhishekgurjarin)
 
 ---
 
@@ -549,7 +548,7 @@ Special thanks to the open-source community and these amazing projects:
 
 For questions, issues, or feature requests:
 
-- **GitHub Issues**: [Create an issue](https://github.com/yourusername/TradeX/issues)
+- **GitHub Issues**: [Create an issue](https://github.com/abhishekgurjarin/TradeX/issues)
 - **Documentation**: [API Docs](http://localhost:3003/api-docs)
 
 ---
